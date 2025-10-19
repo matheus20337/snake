@@ -7,7 +7,7 @@
 #define DEFAULT_WIDTH 30
 #define DEFAULT_HEIGHT 25
 
-/* draws the game map. Excepts a window large enough to print the map */
+/* draws the game map. Expects a window large enough to print the map */
 static void draw(WINDOW *display, Map *map) {
 	werase(display);
 
