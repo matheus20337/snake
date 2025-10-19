@@ -5,8 +5,8 @@ OBJ = $(patsubst %.c, %.o, $(SRC))
 
 CC := gcc
 
-CFLAGS := -Wall -Wextra -Werror -pedantic -std=c99 -g
-LDFLAGS :=
+CFLAGS := -Wall -Wextra -Werror -g
+LDFLAGS := -lncurses
 
 $(TARGET): $(OBJ)
 	$(CC) $(CFLAGS) $^ $(LDFLAGS) -o $@
